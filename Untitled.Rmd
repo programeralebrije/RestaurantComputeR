@@ -6,7 +6,7 @@ output: html_document
 ---
 
 # creating a vector with the weight of the spheres 
-DiamOfSpheres =c(0.96,1.51,2.17,3.85,4.45,6.02)
+WeightOfSpheres =c(0.96,1.51,2.17,3.85,4.45,6.02)
 
 # Create a function that converts weight in grams to diameter in inches 
 # for the ice spheres called diam()
@@ -18,7 +18,7 @@ diam(1.51)
 
 for (sphere in DiamOfSpheres) {
   spheres = diam(sphere)
-  print(spheres)
+  cat(sphere, "Grams in sphere weight =" , spheres, "inches in diameter\n")
   
   
 }
